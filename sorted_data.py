@@ -20,8 +20,7 @@ f = open('scores.txt')
 # Initiate empty dict
 rest_scores = {}
 
-# TODO Why does this print '/n' behind each 2nd tuple? Can use this in place of readline()? (try while lloop)
-# Use readline to go through each line to split key/value pairs by colon(:)
+# Go line by line to go through each line to split key/value pairs by colon(:)
 for line in f:
     line = line.strip()
     split_line = line.split(":")
@@ -34,16 +33,22 @@ for restaurant in alpha_rest:
     print "Restaurant %s is rated at %s" % (restaurant, rest_scores[restaurant])
 
 
-
-
+"""
+TO-DO Try to sort by score and then by restaurant alpha order. Use sorted tuples 
+instead of creating a reverse index dictionary like in Ex 6
+"""
 
 
 
 """
-How to use readline: 
+# How to use readline - need to use a while loop
+
+# Need to assign readline to variable so can reference in the while loop w/o moving to next line
+
 line = f.readline()
 while line is not None:
     line = line.strip()
-
+    ...
+# Need this to move to the next line or else will just keep reading same line
     line = f.readline()
 """
