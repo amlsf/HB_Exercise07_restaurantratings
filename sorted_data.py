@@ -1,6 +1,4 @@
-
-
-# Output should look like this:
+#    Output should look like this:
     # Restaurant 'Andalu' is rated at 3.
     # Restaurant "Arinell's" is rated at 4.
     # Restaurant 'Bay Blend Coffee and Tea' is rated at 3.
